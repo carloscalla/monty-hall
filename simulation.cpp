@@ -49,10 +49,13 @@ int main() {
   return 0;
 }
 
-/*
+/**
  * Assuming we always switch our initial choice:
  * After running and printing multiple times, we can visualize
  * that if we initially choose the door with the prize, we will lose.
  * However, if we initially choose either one of the 2 without the prize, we
  * will win. This leave us with 1/3 chance of loosing and 2/3 chance of winning
+ *
+ * The simulation can be reduced to this statement:
+ * (prize == choice) ? loses++ : wins++;
  */
